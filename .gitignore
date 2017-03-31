@@ -3,9 +3,6 @@
 /bower_components
 /log
 /logs
-/public/assets/
-/public/build/
-/public/images/
 .codeintel/
 /storage/debugbar/
 /storage/dragonpay/
