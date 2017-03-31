@@ -80,6 +80,24 @@ namespace :laravel do
     task :permissions do
         on roles(:app), in: :sequence, wait: 5 do
             within release_path  do
+                if test("[ ! -d #{current_path}/storage/framework ]")
+                    execute :mkdir, "#{current_path}/storage/framework/"
+                end
+                if test("[ ! -d #{current_path}/storage/framework/cache ]")
+                    execute :mkdir, "#{current_path}/storage/framework/cache/"
+                end
+                if test("[ ! -d #{current_path}/storage/framework/sessions ]")
+                    execute :mkdir, "#{current_path}/storage/framework/sessions/"
+                end
+                if test("[ ! -d #{current_path}/storage/framework/views ]")
+                    execute :mkdir, "#{current_path}/storage/framework/views/"
+                end
+                if test("[ ! -d #{current_path}/storage/json ]")
+                    execute :mkdir, "#{current_path}/storage/json/"
+                end
+                if test("[ ! -d #{current_path}/storage/logs ]")
+                    execute :mkdir, "#{current_path}/storage/logs/"
+                end
                 execute :sudo, :chmod, "u+x artisan"
                 execute :sudo, :chmod, "-R 777 storage/framework/cache"
                 execute :sudo, :chmod, "-R 777 storage/framework/sessions"
@@ -196,13 +214,13 @@ namespace :deploy do
     # after :published, "git:check_revision"
     # after :published, "composer:update"
     after :published, "composer:install"
-    # after :published, "environment:sync"
+    after :published, "environment:sync"
     after :published, "laravel:optimize"
     after :published, "laravel:permissions"
     # after :published, "laravel:migrate"
     # after :published, "laravel:seed"
     # after :published, "laravel:vendor_publish"
-    after :published, "assets:copy"
+    # after :published, "assets:copy"
     after :published, "plesk:group_ownership"
     # before :cleanup, "housekeeping:permissions"
 end
