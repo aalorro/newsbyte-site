@@ -17,7 +17,6 @@ upload.json.example
 .env
 .env.staging
 .env.production
-config/deploy.rb
 .DS_Store
 Desktop.ini
 ._*
