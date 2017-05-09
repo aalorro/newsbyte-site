@@ -14,6 +14,7 @@
                     <li><a href="{{url('r/sea/Myanmar')}}"><div class="bg_img" style="background-image: url('http://dev.newsbyte.org/images/flags/my.png')"></div> Myanmar</a></li>
                     <li><a href="{{url('r/sea/Philippines')}}"><div class="bg_img" style="background-image: url('http://dev.newsbyte.org/images/flags/ph.png')"></div> Philippines</a></li>
                     <li><a href="{{url('r/sea/Thailand')}}"><div class="bg_img" style="background-image: url('http://dev.newsbyte.org/images/flags/th.png')"></div> Thailand</a></li>
+                    <li><a href="{{url('r/sea/Vietnam')}}"><div class="bg_img" style="background-image: url('http://dev.newsbyte.org/images/flags/vn.png')"></div> Vietnam</a></li>
                 </ul>
                 <ul class="list-unstyled list_cntry">
                     <li class="country_title">Central Asia<span></span></li>

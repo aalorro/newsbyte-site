@@ -192,7 +192,11 @@ class ByteController extends Controller
 
 			$this->news($country,$region);
 			//dd($this->data);
-				
+			
+			if(!array_key_exists('native', $this->data)){
+				$this->data['native'] = "No news found.";
+			}
+
 			$this->data['news'] =  $this->data['news']->where('language',$this->data['native']);		
 			//$this->data['x'] = $this->data['collection']->sortBy('pubdate')->toArray();
 			//dd($this->data);
