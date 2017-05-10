@@ -25,11 +25,11 @@
 	    </a>
 	@endif
 	@if(Request::segment(3) == 'Malawi')
-	    <a href="http://0.freebasics.com/wfp" target="_blank">
+	    <a href="http://0.freebasics.com/wfp?ref=newsbyte" target="_blank">
 	        <div class="ads malawi" style="background: url('{{url('images/prices.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
 	    </a>
     @elseif(isset($country) && $country == 'Malawi')
-	    <a href="http://0.freebasics.com/wfp" target="_blank">
+	    <a href="http://0.freebasics.com/wfp?ref=newsbyte" target="_blank">
 	        <div class="ads malawi" style="background: url('{{url('images/prices.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
 	    </a>
 	@endif
