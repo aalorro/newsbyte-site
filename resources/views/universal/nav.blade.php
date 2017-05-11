@@ -16,12 +16,12 @@
 
 <div class="container">
 	@if(Request::segment(3) == 'Philippines')
-	    <a href="https://http-ph-gem-molo-unicore-io.0.freebasics.com/?iorg_service_id_internal=430282957127025%3BAfqCBffNbOiB4KJw&ref=newsbyte">
-	        <div class="ads" style="background: url('{{url('images/banner2.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
+	    <a target="_blank" href="https://http-pilipinas-babycenter-io.0.freebasics.com/?iorg_service_id_internal=351397735068577%3BAfqKOtXK9qXUIdec">
+	        <div class="ads malawi" style="background: url('{{url('images/banner3.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
 	    </a>
     @elseif(isset($country) && $country == 'Philippines')
-	    <a href="https://http-ph-gem-molo-unicore-io.0.freebasics.com/?iorg_service_id_internal=430282957127025%3BAfqCBffNbOiB4KJw&ref=newsbyte">
-	        <div class="ads" style="background: url('{{url('images/banner2.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
+	    <a target="_blank" href="https://http-pilipinas-babycenter-io.0.freebasics.com/?iorg_service_id_internal=351397735068577%3BAfqKOtXK9qXUIdec">
+	        <div class="ads malawi" style="background: url('{{url('images/banner3.jpg')}}');background-size:cover;background-position: center; background-repeat: no-repeat; height: 150px;"> </div>
 	    </a>
 	@endif
 	@if(Request::segment(3) == 'Malawi')
