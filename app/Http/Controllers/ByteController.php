@@ -35,6 +35,11 @@ class ByteController extends Controller
 	                                $arrDate['item_id'] = $pub['item_id'];
 	                                $arrDate['article'] = $pub['article'];
 	                                $arrDate['link'] = $pub['link'];
+	                                if(isset($pub['thumbnail'])) {
+	                                	$arrDate['thumbnail'] = $pub['thumbnail'];
+	                                } else {
+	                                	$arrDate['thumbnail'] = '';
+	                                }
 	                               //dd($pub['pubdate']);
 	                                //$arrDate['pubdate'] = date_format(date_create($pub['pubdate']), "Y-m-d h:i:s A");
 	                                $orig = (isset($pub['pubdate']) ? $pub['pubdate'] : $pub['pubdate'] = strtotime(date("Y-m-d h:i:s A")));

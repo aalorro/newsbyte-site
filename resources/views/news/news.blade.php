@@ -25,8 +25,8 @@
                 </div>
                 <!--<a href="https://0.freebasics.com/?ref=badges" class="freebasic"><img class="pull-right clearfix" src="{{asset('images/freebasic1.jpg')}}" alt="freebasic" width="100px"/></a>-->
 
-                   @foreach($news as $key => $val)
-                   <?php
+                @foreach($news as $key => $val)
+                    <?php
                         $currentLang = $native;
                         //$currentLang = $language;
                         $segments = explode('/', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'));
@@ -40,8 +40,11 @@
                             $currentLang = $native;
                         }
 
-                   ?>
+                    ?>
                     <article class="@if($currentLang == 'Arabic' || $currentLang == 'Urdu' || $native == 'Dhivehi'){{ 'text-right' }} @else {{ '' }} @endif">
+                        @if ($val['thumbnail'] != '')
+                            <img src="{{ $val['thumbnail'] }}" class="thumbnail" width="200px">
+                        @endif
                         <p >
                             <a href="{{url('/article')}}/{{ $region }}/{{ $val['country'] }}/{{ $val['item_id'] }}/{{ $val['language'] }}" class="a_link">
                                 {{ $val['title'] }}
