@@ -291,6 +291,11 @@ class ByteController extends Controller
 						 	$ids['pubdate'] = $value['pubdate'];
 						 	$ids['source'] = $value['source'];
 						 	$ids['language'] = $value['language'];
+                            if(isset($ids['thumbnail'])) {
+                            	$ids['thumbnail'] = $value['thumbnail'];
+                            } else {
+                            	$ids['thumbnail'] = '';
+                            }
 						 	//echo $value['item_id'].'<br/>';
 						 	array_push($result, $ids);
 						}
