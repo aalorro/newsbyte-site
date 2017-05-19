@@ -50,12 +50,14 @@
                                 </a>
                             </p>
                         </div>
+                        @if ($val['thumbnail'] != '')
                         <div class="col-md-3">
-                            @if ($val['thumbnail'] != '')
                                 <img src="{{ $val['thumbnail'] }}" class="thumbnail img-responsive">
-                            @endif
                         </div>
                         <div class="col-md-9">
+                        @else
+                        <div class="col-md-12">
+                        @endif
                             <ul class="list-inline">
                                 <li class="news_source">
                                     <?php 
