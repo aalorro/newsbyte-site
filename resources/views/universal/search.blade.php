@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="col-md-10 col-xs-9">
                             <div class="form-group">
-                                <select class="form-control" name="nav">
-                                    <option>-- Select Country --</option>
+                                <select class="form-control" name="nav" required>
+                                    <option value selected disabled>-- Select Country --</option>
                                     <optgroup label="Southeast Asia">
                                         <option value="sea/Cambodia">Cambodia</option>
                                         <option value="sea/Indonesia">Indonesia</option>
@@ -31,6 +31,7 @@
                                         <option value="sea/Myanmar">Myanmar</option>
                                         <option value="sea/Philippines">Philippines</option>
                                         <option value="sea/Thailand">Thailand</option>
+                                        <option value="sea/Vietnam">Vietnam</option>
                                     </optgroup>
                                     <optgroup label="Central Asia">
                                         <option value="ca/Kazakhstan">Kazakhstan</option>
