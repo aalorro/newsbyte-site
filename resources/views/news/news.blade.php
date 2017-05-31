@@ -41,7 +41,7 @@
                         }
 
                     ?>
-                    <article class="@if($currentLang == 'Arabic' || $currentLang == 'Urdu' || $native == 'Dhivehi'){{ 'text-right' }} @else {{ '' }} @endif" style="padding:20px 0;">
+                    <article class="@if($currentLang == 'Arabic' || $currentLang == 'Urdu' || $currentLang == 'Dhivehi'){{ 'text-right' }} @else {{ '' }} @endif" style="padding:20px 0;">
                     <div class="row">
                         <div class="col-md-12">
                             <p>
