@@ -14,6 +14,50 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><!--.Bootstrap-->
     <!--.Main-->
 
+
+    <style type="text/css">
+
+    .match-date {
+    }
+
+    .scoreboard {
+        color: #bdc3c7;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+        
+    .team {
+        vertical-align: super;
+        font-size: 1.8rem;
+        display: inline-block;
+    }
+        
+    .score {
+        font-size: 3rem;
+        width: 80px;
+        display: inline-block;
+    }
+
+    .home-team {
+        background-color: #e67e22;
+    }
+
+    .away-team {
+        background-color: #3498db;
+    }
+
+    .winner {
+        color: #ecf0f1;
+        font-weight: bold;
+    }
+
+
+    </style>
+
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
