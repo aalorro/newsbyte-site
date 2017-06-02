@@ -17,11 +17,44 @@
 
     <style type="text/css">
 
+    /* Select Sport */
+    .sport_select div {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .sport_select div:nth-of-type(1){
+        padding-right: 0;
+        border-right: 1px solid #4B77BE;
+    }
+
+    .sport_select div:nth-of-type(2){
+        padding-left: 0;
+    }
+
+    .sport_select section {
+        background: #59ABE3;
+        padding: .8em 0;
+    }
+
+    .sport_select section a {
+        color: #ecf0f1;
+    }
+
+    .sport_select section.selected{
+        background: #2980b9;
+    }
+
+
+    .match {
+    }
+
     .match-date {
+        color: #044F67;
+        font-weight: bold;
     }
 
     .scoreboard {
-        color: #bdc3c7;
         margin-left: 0px;
         margin-right: 0px;
         overflow:hidden;
@@ -34,25 +67,23 @@
         font-size: 1.8rem;
         display: inline-block;
     }
+
+    .winner {
+        background-color: #4B77BE;
+        color: #ecf0f1;
+        font-weight: bold;
+    }
+
+    .loser {
+        background-color: #ABB7B7;
+        color: #ECF0F1;
+    }
         
     .score {
         font-size: 3rem;
         width: 70px;
         display: inline-block;
         margin-left: 10px;
-    }
-
-    .home-team {
-        background-color: #e67e22;
-    }
-
-    .away-team {
-        background-color: #3498db;
-    }
-
-    .winner {
-        color: #ecf0f1;
-        font-weight: bold;
     }
 
 
