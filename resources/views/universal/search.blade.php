@@ -59,6 +59,9 @@
                                         <option value="wa/Saudi Arabia">Saudi Arabia</option>
                                         <option value="wa/Yemen">Yemen</option>
                                     </optgroup>
+                                    <optgroup label="East Europe">
+                                        <option value="ee/Belarus">Belarus</option>
+                                    </optgroup>
                                     <optgroup label="Africa">
                                         <option value="af/Algeria">Algeria</option>
                                         <option value="af/Angola">Angola</option>
