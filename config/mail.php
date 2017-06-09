@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'username' => env('armando@incubixtech.com'),
+    'username' => env('MAIL_USERNAME', 'armando@incubixtech.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'password' => env('OKqax8s4zEVdHr3C'),
+    'password' => env('MAIL_PASSWORD', 'OKqax8s4zEVdHr3C'),
 
     /*
     |--------------------------------------------------------------------------

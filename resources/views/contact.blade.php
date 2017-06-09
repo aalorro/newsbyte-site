@@ -2,8 +2,8 @@
 
     @section('headtag_additionalCodes')
         
-    <script src="https://www.google.com/recaptcha/api.js?">
-    </script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?">
+    </script> -->
     
 
     @stop
@@ -41,12 +41,15 @@
                             <input type="text" class="form-control input-lg" placeholder="City, Country" name="c_number" required/>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
+                    <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2 form-group">
                         <textarea class="form-control wow contact_form3 input-lg" rows="6" placeholder="Your message here .." name="contact_message" required/></textarea>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                        <br/>
-                       <div class="g-recaptcha" data-sitekey="6Lc-rhITAAAAANWbhgzum6e6MG87L8VRQp0D4zEK"></div>
+                        <!-- <br/>
+                        <div class="g-recaptcha" data-sitekey="6Lc-rhITAAAAANWbhgzum6e6MG87L8VRQp0D4zEK"></div> -->
+                        <div class="form-group">
+                           <label><input type="checkbox" name="" required>I'm not a robot</label>
+                        </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-8 col-xs-offset-2 col-md-xs-3 col-sm-offset-3">
                         <div class="form-group"><br/>
