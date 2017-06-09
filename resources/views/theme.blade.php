@@ -37,9 +37,8 @@
         
     .score {
         font-size: 3rem;
-        width: 70px;
+        width: 80px;
         display: inline-block;
-        margin-left: 10px;
     }
 
     .home-team {
