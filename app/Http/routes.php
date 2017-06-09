@@ -18,7 +18,6 @@ Route::group(['prefix' => 'scoresbyte'], function () {
 
 	Route::get('r/{region}/{country}','ScoresByteController@index');
 	Route::get('{region}/{country}/{sport}','ScoresByteController@sport');
-	Route::post('search','ScoresByteController@navCountry');
 });
 
 Route::get('/', function () {
