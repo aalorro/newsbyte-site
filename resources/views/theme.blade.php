@@ -34,7 +34,7 @@
             &copy; Newsbyte.org <br/>
             <a href="/about">About Us</a> | <a href="/contact">Contact us</a><br/>
             Proudly developed by <a href="http://www.devhub.ph/" target="_blank"><span class="devhub">{<span class="dev">dev</span>hub}</span></a><br/>
-            <a href="http://rss.newsbyte.org/"><img src="{{asset('images/rssfeed-logo.png')}}" width="50px" alt="rss"></a>
+            <!-- <a href="http://rss.newsbyte.org/"><img src="{{asset('images/rssfeed-logo.png')}}" width="50px" alt="rss"></a> -->
         </div>
     </footer>
 </body>
